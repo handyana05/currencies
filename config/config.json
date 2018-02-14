@@ -1,0 +1,8 @@
+{
+  "eurofxurl": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref.zip",
+  "path": {
+    "csv": "../core/currency/eurofxref.csv",
+    "currency": "../core/currency",
+    "zip": "../core/eurofxref.zip"
+  }
+}

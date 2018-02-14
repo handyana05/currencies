@@ -1,0 +1,42 @@
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+    <div class="breadcrumb" style="margin-bottom: 0;">
+        <div class="container">
+            <ol class="breadcrumb" style="background-color: transparent; margin-bottom: 0;">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Currency Converter</li>
+            </ol>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Currency Calculator</h2>
+    <form>
+        <div class="row">
+            <div class="col-3">
+                <label for="amountIHave">Amount</label>
+                <input id="amountIHave" type="text" class="form-control" placeholder="Choose" ng-model="$ctrl.selectedAmountFrom">
+            </div>
+            <div class="col-2">
+                <label for="currencyIHave">Currency I Have</label>
+                <select class="custom-select" id="currencyIHave" ng-options="currency as currency.name for currency in $ctrl.currencies"
+                        ng-model="$ctrl.selectedCurrencyFrom" ng-change="$ctrl.optionsFromOnChange()">
+                </select>
+            </div>
+            <div class="col-3">
+                <label for="amountIWant">Amount</label>
+                <input id="amountIWant" type="text" class="form-control" placeholder="Choose" ng-model="$ctrl.selectedAmountTo" readonly>
+            </div>
+            <div class="col-2">
+                <label for="currencyIWant">Currency I Want</label>
+                <select class="custom-select" id="currencyIWant" ng-options="currency as currency.name for currency in $ctrl.currencies"
+                        ng-model="$ctrl.selectedCurrencyTo" ng-change="$ctrl.optionsToOnChange()">
+                </select>
+            </div>
+            <div class="col-1">
+                <label for="curencyCalculateBtn">&nbsp;</label>
+                <button id="curencyCalculateBtn" type="button" class="btn btn-primary" ng-click="$ctrl.calculateCurrency()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>

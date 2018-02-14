@@ -1,0 +1,31 @@
+<!--
+<div layout="row">
+    <div flex="70" flex-offset="15">
+        <h2>Currencies</h2>
+        <md-content>
+            <md-list flex>
+
+            </md-list>
+        </md-content>
+    </div>
+</div>
+-->
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+    <div class="breadcrumb" style="margin-bottom: 0;">
+        <div class="container">
+            <ol class="breadcrumb" style="background-color: transparent; margin-bottom: 0;">
+                <li class="breadcrumb-item active" aria-current="page">Currencies</li>
+            </ol>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Currencies</h2>
+    <ul class="phones">
+        <li ng-repeat="currency in $ctrl.currencies"class="thumbnail phone-list-item">
+            <a href="#!/currency/{{ currency.name }}">{{ currency.name }}</a>
+        </li>
+    </ul>
+</div>

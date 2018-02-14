@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">CurrenciesApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapseNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" ng-class="{ active: $ctrl.isActive('/currencies') }">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item" ng-class="{ active: $ctrl.isActive('/calculator') }">
+                <a class="nav-link" href="#!/calculator">Converter</a>
+            </li>
+        </ul>
+    </div>
+</nav>

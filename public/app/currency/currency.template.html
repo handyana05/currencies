@@ -1,0 +1,23 @@
+<!--
+<md-list-item class="md-3-line" ng-click="">
+    <a href="#!/phones/{{phone.id}}" class="thumb"></a>
+</md-list-item>
+-->
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+    <div class="breadcrumb" style="margin-bottom: 0;">
+        <div class="container">
+            <ol class="breadcrumb" style="background-color: transparent; margin-bottom: 0;">
+                <li class="breadcrumb-item"><a href="#!/currencies">Currencies</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Currency Detail: {{ $ctrl.currency }}</li>
+            </ol>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2>EUR / {{ $ctrl.currency }} Details</h2>
+    <p>
+        1 EUR = {{ $ctrl.currencyValue + ' ' + $ctrl.currency }}
+    </p>
+</div>
